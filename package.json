@@ -4,6 +4,7 @@
   "description": "A repository used to demonstrate API creation using NodeJS",
   "scripts": {
     "start": "node src/server.js",
+    "start-prod": "SET NODE_ENV=prod&& node src/server.js",
     "test": "jest"
   },
   "repository": {
@@ -23,7 +24,9 @@
     "eslint-config-google": "^0.14.0",
     "express": "^4.17.1",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.9.0"
+    "sequelize": "^6.9.0",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.1.6"
   },
   "devDependencies": {
     "jest": "^27.3.1",

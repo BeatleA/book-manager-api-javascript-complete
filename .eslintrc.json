@@ -1,7 +1,8 @@
 {
     "extends": ["eslint:recommended", "google"],
     "rules": {
-        "max-len": ["error", { "code": 150 }]
+        "max-len": ["error", { "code": 150 }],
+        "linebreak-style": ["error", "windows"]
     },
     "env": {
         "node": true,
