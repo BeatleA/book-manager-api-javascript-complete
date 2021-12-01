@@ -65,7 +65,7 @@ router.get('/books/:bookId', booksController.getBook);
  *            schema:
  *              $ref: '#/components/schemas/Book'
  *      responses:
- *        '201':
+ *        201:
  *          description: Created
  *          content:
  *            application/json:
