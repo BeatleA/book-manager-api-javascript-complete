@@ -15,17 +15,12 @@ paths:
           description: "An array of books"
     post:
       summary: "Add a new book"
-      consumes:
-      - "application/json"
-      produces:
-      - "application/json"
-      parameters:
-      - in: "body"
-        name: "body"
-        description: "Book object that needs to be added to the store"
+      requestBody:
         required: true
-        schema:
-          $ref: "#/definitions/Book"
+        content:
+          application/json:
+            schema:
+              $ref: '#/definitions/Book'
       responses:
         "201":
           description: "Created"
